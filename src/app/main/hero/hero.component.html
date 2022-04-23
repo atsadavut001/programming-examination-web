@@ -1,0 +1,18 @@
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-12">
+      <h1>Heros</h1>
+      <p>Please click on the hero.</p>
+    </div>
+    <div class="col-4">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let hero of heros">
+          <a class="btn w-100 text-start" (click)="selectHero(hero)">{{hero.id+'. '+hero.name}}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-12 mt-3">
+      <h5>My hero is <span *ngIf="myHero" class="fw-bold text-decoration-underline">{{myHero.name}}</span></h5>
+    </div>
+  </div>
+</div>

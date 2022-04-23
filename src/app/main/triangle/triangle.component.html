@@ -1,0 +1,22 @@
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-12">
+      <h1>Triangle</h1>
+      <p>send data base and height to restful api part <strong>/triangle</strong></p>
+    </div>
+    <div class="col-3">
+      <div class="mb-3">
+        <label for="imputBase" class="form-label">Base</label>
+        <input type="number" class="form-control" id="imputBase" placeholder="Base" [(ngModel)]="data.base">
+      </div>
+      <div class="mb-3">
+        <label for="imputHeight" class="form-label">Height</label>
+        <input type="number" class="form-control" id="imputHeight" placeholder="Height" [(ngModel)]="data.height">
+      </div>
+      <button type="button" class="btn btn-primary" (click)="calculateTriangle()">Calculate</button>
+    </div>
+    <div class="col-12 mt-3">
+      Area = <span class="fw-bold text-decoration-underline" *ngIf="area">{{area}}</span>
+    </div>
+  </div>
+</div>

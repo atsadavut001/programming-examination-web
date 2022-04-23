@@ -1,0 +1,14 @@
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-12">
+      <h1>Citizen ID</h1>
+    </div>
+    <div class="col-3">
+      <div class="mb-3">
+        <label for="imputCitizenId" class="form-label"></label>
+        <input type="number" class="form-control" id="imputCitizenId" placeholder="Citizen ID" [(ngModel)]="data.citizen_id">
+      </div>
+      <button type="button" class="btn btn-primary" (click)="verify()">Verify</button>
+    </div>
+  </div>
+</div>
